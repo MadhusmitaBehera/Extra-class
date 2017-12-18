@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+	       int num,fd,ld;
+	       int swappedno,p,digit;
+	       cout<<"\n Enter any number.";
+	       cin>>num;
+	       ld=num%10;
+	       fd=num;
+	       for(fd=num;fd>=10;fd++)
+	       {
+	       	fd=num/10;
+	       }
+	       p=pow(10,(digit-1));
+	       num=num-(fd*p);
+	       swappedno=ld*pow(10,p)+num*10+fd;
+	       cout<<"\n The swapped number is:"<<swappedno<<endl;
+	return 0;
+}
