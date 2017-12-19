@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+           int num,var,re,binary=0,i=1;
+           cout<<"\n Enter a decimal number.";
+           cin>>num;
+           var=num;
+           while(num!=0)
+           {
+           	re=num%2;
+           	num=num/2;
+           	binary=binary+(re*i);
+           	i=i*10;
+           }
+           cout<<"\n Binary is:"<<binary<<endl;
+           
+	return 0;
+}
